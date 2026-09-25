@@ -1,0 +1,239 @@
+/* Our Initiatives Stylesheet for Triple B */
+
+.initiatives-section {
+  padding: var(--spacing-xl) 0;
+  background-color: #FFFFFF; /* Pure white background */
+  border-top: 1px solid rgba(94, 58, 140, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Explicitly style the Section Header to stand out and force vertical centering */
+.initiatives-section .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  position: relative;
+  display: block; /* Force block layout */
+}
+
+.initiatives-section .section-tagline {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-secondary); /* Brand Warm Pink */
+  margin-bottom: 0.8rem;
+}
+
+.initiatives-section .section-title {
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary); /* Brand Deep Purple */
+  margin-bottom: 1.2rem;
+  display: inline-block;
+}
+
+/* Gold Underline Accent */
+.initiatives-section .section-title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: var(--color-accent); /* Brand Soft Gold line */
+  margin: 0.8rem auto 0 auto;
+  border-radius: 2px;
+}
+
+.initiatives-section .initiatives-intro {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-dark); /* Sophisticated dark slate purple for legibility */
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+
+/* 2-Column Responsive Card Grid */
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 2.5rem auto 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Card Structure */
+.initiative-card {
+  position: relative;
+  border-radius: 20px;
+  height: 480px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(94, 58, 140, 0.08);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  z-index: 1;
+}
+
+/* Image Background Wrapper */
+.initiative-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.initiative-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Multi-layered Dark Overlay that injects Brand Purple on Hover */
+.initiative-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(18, 10, 29, 0.95) 0%,
+    rgba(18, 10, 29, 0.6) 45%,
+    rgba(18, 10, 29, 0.1) 75%,
+    transparent 100%
+  );
+  z-index: 2;
+  transition: background var(--transition-smooth);
+}
+
+.initiative-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(94, 58, 140, 0.18);
+}
+
+.initiative-card:hover::before {
+  background: linear-gradient(
+    to top,
+    rgba(94, 58, 140, 0.95) 0%, /* Smooth transition to brand purple shadow */
+    rgba(18, 10, 29, 0.7) 45%,
+    rgba(18, 10, 29, 0.2) 75%,
+    transparent 100%
+  );
+}
+
+.initiative-card:hover .initiative-image {
+  transform: scale(1.06);
+}
+
+/* Badges on Top Right of Image */
+.initiative-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 6px 16px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.initiative-badge.badge-pink {
+  background-color: var(--color-secondary); /* Brand Warm Pink #D63384 */
+}
+
+.initiative-badge.badge-purple {
+  background-color: var(--color-primary); /* Brand Deep Purple #5E3A8C */
+}
+
+/* Text Overlay Layout */
+.initiative-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.2rem;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.initiative-title {
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 1.45rem;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.initiative-card-desc {
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* Meta Data Footer in Card */
+.initiative-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.meta-icon {
+  width: 15px;
+  height: 15px;
+  stroke: var(--color-accent); /* Branded gold accent lines */
+  stroke-width: 2.2px;
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+  .initiatives-grid {
+    grid-template-columns: 1fr; /* Single column stack */
+    gap: 2rem;
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .initiative-card {
+    height: 440px;
+  }
+  
+  .initiative-content {
+    padding: 1.8rem;
+  }
+  
+  .initiative-title {
+    font-size: 1.3rem;
+  }
+}

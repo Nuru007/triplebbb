@@ -1,0 +1,62 @@
+/* CSS variables defining brand tokens for Triple B Global Initiative website */
+
+:root {
+  /* Brand Palette */
+  --color-primary: #5E3A8C;       /* Deep Purple */
+  --color-primary-rgb: 94, 58, 140;
+  
+  --color-secondary: #D63384;     /* Warm Pink */
+  --color-secondary-rgb: 214, 51, 132;
+  
+  --color-accent: #E3B23C;        /* Soft Gold */
+  --color-accent-rgb: 227, 178, 60;
+  
+  --color-balance: #2D6A4F;       /* Calm green for Balance pillar */
+  --color-balance-rgb: 45, 106, 79;
+
+  /* Neutrals */
+  --color-bg-light: #FDFBF9;      /* Warm premium off-white */
+  --color-bg-dark: #120A1D;       /* Deep editorial near-black purple */
+  --color-text-dark: #2B1D38;     /* Sophisticated deep slate purple */
+  --color-text-light: #FFFFFF;
+  --color-text-muted: #8E8299;
+
+  /* Gradients */
+  --grad-overlay-purple: linear-gradient(135deg, rgba(94, 58, 140, 0.85) 0%, rgba(18, 10, 29, 0.9) 100%);
+  --grad-overlay-pink: linear-gradient(135deg, rgba(214, 51, 132, 0.8) 0%, rgba(94, 58, 140, 0.85) 100%);
+  --grad-overlay-gold: linear-gradient(135deg, rgba(227, 178, 60, 0.7) 0%, rgba(94, 58, 140, 0.85) 100%);
+  
+  /* Pillar Gradients (Glowing Artistic Depth) */
+  --grad-pillar-beauty: linear-gradient(180deg, rgba(214, 51, 132, 0.15) 0%, rgba(214, 51, 132, 0.02) 100%);
+  --grad-pillar-brain: linear-gradient(180deg, rgba(94, 58, 140, 0.15) 0%, rgba(94, 58, 140, 0.02) 100%);
+  --grad-pillar-balance: linear-gradient(180deg, rgba(45, 106, 79, 0.15) 0%, rgba(45, 106, 79, 0.02) 100%);
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Layout */
+  --max-width-content: 1280px;
+  --header-height: 90px;
+
+  /* Transitions & Animation Timings */
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.25s ease;
+  --transition-slow: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Shadows and Borders */
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+  --shadow-premium: 0 20px 40px rgba(18, 10, 29, 0.05);
+  --shadow-glow-purple: 0 0 30px rgba(94, 58, 140, 0.25);
+  --shadow-glow-pink: 0 0 30px rgba(214, 51, 132, 0.25);
+  --shadow-glow-balance: 0 0 30px rgba(45, 106, 79, 0.25);
+}

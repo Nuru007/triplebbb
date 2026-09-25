@@ -1,0 +1,284 @@
+/* About Section Styles for Triple B */
+
+.about-section {
+  padding: var(--spacing-xl) 0;
+  background-color: #FDF2F6; /* Premium very light pink background matching the brand guidelines */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlapping Image Collage Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr 1.1fr;
+    gap: var(--spacing-xl);
+  }
+}
+
+/* Image Collage Container */
+.about-collage {
+  position: relative;
+  width: 100%;
+  padding-left: 40px; /* Leave space for left-aligned badge & sub-image offset */
+  box-sizing: border-box;
+}
+
+/* Background sketch decoration */
+.about-sketch-bg {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  z-index: 0;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Main vertical image */
+.about-img-main-wrapper {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(18, 10, 29, 0.08);
+  z-index: 2;
+}
+
+.about-img-main-wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+/* Small overlapping vertical image */
+.about-img-sub-wrapper {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 42%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 8px solid #FDF2F6; /* Matches very light pink background */
+  box-shadow: 0 20px 45px rgba(18, 10, 29, 0.12);
+  z-index: 4;
+}
+
+.about-img-sub-wrapper img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* Circular badge overlay */
+.about-badge {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #FDF2F6;
+  box-shadow: 0 10px 25px rgba(94, 58, 140, 0.25);
+  z-index: 3;
+}
+
+.about-badge svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Content Area styling */
+.about-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  display: block;
+}
+
+.about-headline {
+  font-size: 2.2rem;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .about-headline {
+    font-size: 2.8rem;
+  }
+}
+
+/* Tab controls */
+.about-tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(43, 29, 56, 0.1);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-tab-btn {
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding: 0.5rem 0 0.8rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.about-tab-btn:hover {
+  color: var(--color-primary);
+}
+
+.about-tab-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transition: var(--transition-fast);
+}
+
+.about-tab-btn.active {
+  color: var(--color-text-dark);
+}
+
+.about-tab-btn.active::after {
+  width: 100%;
+}
+
+/* Tab contents */
+.about-tab-pane {
+  display: none;
+  animation: fadeInPane 0.5s ease forwards;
+}
+
+.about-tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeInPane {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-dark); /* Changed from muted to dark slate for high legibility */
+  margin-bottom: var(--spacing-md);
+}
+
+/* Bottom footer of the About section */
+.about-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px dashed rgba(43, 29, 56, 0.15);
+}
+
+.about-stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF; /* White card backdrop */
+  padding: 0.9rem 1.6rem;
+  border-radius: 20px; /* Highly rounded corners matching screenshot */
+  box-shadow: 0 15px 35px rgba(18, 10, 29, 0.12); /* Solid, prominent drop shadow matching screenshot */
+  border: 1px solid rgba(18, 10, 29, 0.03);
+  transition: var(--transition-smooth);
+}
+
+.about-stats:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(18, 10, 29, 0.18);
+}
+
+.about-stats-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #FDEFD2; /* Soft pastel gold background from screenshot */
+  color: #A67C1E; /* Dark brand gold icon color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.about-stats-icon-wrapper svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.about-stats-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-stats-num {
+  font-family: var(--font-sans);
+  font-weight: 800; /* Extra bold matching screenshot */
+  font-size: 1.8rem;
+  color: var(--color-bg-dark); /* Very dark purple-black text */
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.about-stats-text {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #726180; /* Soft slate/brown label text matching screenshot */
+  line-height: 1;
+}

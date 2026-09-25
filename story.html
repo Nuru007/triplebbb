@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story | Triple B Global Initiative</title>
+  <meta name="description" content="Discover the story of Triple B—how we evolved from a campus student initiative to a national movement empowering young women across Nigerian tertiary institutions.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Story | Triple B Global Initiative">
+  <meta property="og:description" content="Discover the story of Triple B—how we evolved from a campus student initiative to a national movement empowering young women across Nigerian tertiary institutions.">
+  <meta property="og:image" content="assets/images/story_founder.jpg">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css?v=3.5">
+  <link rel="stylesheet" href="css/main.css?v=3.5">
+  <link rel="stylesheet" href="css/story.css?v=4.0">
+  <link rel="stylesheet" href="css/footer.css?v=3.5">
+</head>
+<body>
+
+  <!-- Premium Sticky Header Navbar -->
+  <header class="header-nav nav-light" id="main-header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo-link" id="nav-logo-link" aria-label="Triple B Home">
+        <img src="assets/logo.png" alt="Triple B Logo" class="logo-img" id="nav-logo">
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" id="menu-home">Home</a></li>
+          <li class="nav-item"><a href="index.html#about" id="menu-about">About Us</a></li>
+          <li class="nav-item"><a href="story.html" id="menu-story" class="active">Our Story</a></li>
+          <li class="nav-item"><a href="index.html#pillars" id="menu-pillars">Our Pillars</a></li>
+          <li class="nav-item"><a href="index.html#initiatives" id="menu-initiatives">Our Initiatives</a></li>
+          <li class="nav-item"><a href="#" id="menu-partner">Partner</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation CTAs -->
+      <div class="nav-cta">
+        <a href="index.html#join" class="btn btn-nav-cta" id="nav-cta-button">Join Movement</a>
+      </div>
+
+      <!-- Hamburger toggle for mobile menu -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="nav-menu-mobile">
+      <li class="nav-item"><a href="index.html" id="mob-menu-home">Home</a></li>
+      <li class="nav-item"><a href="index.html#about" id="mob-menu-about">About Us</a></li>
+      <li class="nav-item"><a href="story.html" id="mob-menu-story" class="active">Our Story</a></li>
+      <li class="nav-item"><a href="index.html#pillars" id="mob-menu-pillars">Our Pillars</a></li>
+      <li class="nav-item"><a href="index.html#initiatives" id="mob-menu-initiatives">Our Initiatives</a></li>
+      <li class="nav-item"><a href="#" id="mob-menu-partner">Partner</a></li>
+    </ul>
+    <div class="mobile-cta-container">
+      <a href="index.html#join" class="mobile-nav-btn btn-secondary" onclick="toggleMobileMenu()">Join Us</a>
+      <a href="#" class="mobile-nav-btn btn-primary" onclick="toggleMobileMenu()">Partner With Us</a>
+    </div>
+  </div>
+
+  <!-- Our Story Hero Section -->
+  <section class="story-hero" id="story-hero" aria-label="Story Introduction">
+    <!-- Floating Avatars Left Side -->
+    <div class="avatar-float avatar-left-1" style="--bg-color: #FEF3C7; --animation-delay: 0s; --float-speed: 5s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_1.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-left-2" style="--bg-color: #FCE7F3; --animation-delay: 1.2s; --float-speed: 6.5s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_2.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-left-3" style="--bg-color: #F3E8FF; --animation-delay: 2.5s; --float-speed: 5.8s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_4.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-left-4" style="--bg-color: #E0F2FE; --animation-delay: 0.7s; --float-speed: 7.2s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_5.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+
+    <!-- Floating Avatars Right Side -->
+    <div class="avatar-float avatar-right-1" style="--bg-color: #FCE7F3; --animation-delay: 1.8s; --float-speed: 6s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_3.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-right-2" style="--bg-color: #FEF3C7; --animation-delay: 0.3s; --float-speed: 5.4s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_7.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-right-3" style="--bg-color: #E0F2FE; --animation-delay: 2.1s; --float-speed: 6.8s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_6.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+    <div class="avatar-float avatar-right-4" style="--bg-color: #F3E8FF; --animation-delay: 0.9s; --float-speed: 7.8s;">
+      <div class="avatar-img-wrapper">
+        <img src="assets/images/cropped_face_8.png?v=2.0" alt="Triple B Member face">
+      </div>
+    </div>
+
+    <div class="story-hero-content container reveal">
+      <div class="story-hero-badge">From a Campus Initiative to a National Movement</div>
+      <h1 class="story-hero-title">
+        Empowering Her to <span class="highlight-text">Own Her Future</span>
+      </h1>
+      <p class="story-hero-desc">
+        What began as a simple vision to empower female students has evolved into a growing movement dedicated to helping young women recognize their beauty, value their intelligence, and build the balance needed to thrive in every area of life.
+      </p>
+      <div class="story-hero-actions">
+        <a href="index.html#join" class="btn btn-primary">Join Movement</a>
+        <a href="#founder-message-section" class="btn btn-secondary-light">Read Our Story</a>
+      </div>
+      
+      <!-- Curved hand-drawn arrow at bottom right of content -->
+      <div class="deco-arrow">
+        <svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 15C30 18 45 28 50 48C51 55 45 64 58 66C66 67 74 60 82 56L90 52" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" />
+          <path d="M78 49C81 51 87 51 90 52C89 49 88 43 86 40" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Narrative Section -->
+  <section class="story-narrative-section" aria-label="Narrative Chapters">
+    <div class="container">
+      
+      <!-- Chapter 1: The Seed -->
+      <div class="narrative-chapter reveal">
+        <div class="narrative-text">
+          <span class="chapter-number">Chapter 01</span>
+          <h2 class="chapter-title">The Seed</h2>
+          <span class="chapter-year">2022/2023 Academic Session</span>
+          <p class="chapter-desc">
+            In the 2022/2023 academic session, Amanda Egbe, then President of APWEN ABUAD Collegiate, introduced the concept of Triple B. 
+          </p>
+          <p class="chapter-desc">
+            The original vision was to create a platform where female students could learn, grow, acquire practical skills, and prepare themselves for life beyond the classroom. This marked the beginning of what would later become Triple B.
+          </p>
+        </div>
+        <div class="narrative-visual crop-editorial-1">
+          <img src="assets/images/hero_mentorship.png" alt="Students learning in a workshop mentorship moment" class="narrative-img">
+        </div>
+      </div>
+
+      <!-- Chapter 2: The Expansion -->
+      <div class="narrative-chapter narrative-reverse reveal">
+        <div class="narrative-text">
+          <span class="chapter-number">Chapter 02</span>
+          <h2 class="chapter-title">The Expansion</h2>
+          <span class="chapter-year">2024/2025 Academic Session</span>
+          <p class="chapter-desc">
+            During the 2024/2025 academic session, the vision was expanded under the leadership of Olonisakin Niniolaoluwa.
+          </p>
+          <p class="chapter-desc">
+            Triple B evolved beyond a single student initiative and became a platform designed to serve female students across every college and discipline. The focus shifted from a campus-based concept to a broader empowerment movement.
+          </p>
+        </div>
+        <div class="narrative-visual crop-editorial-2">
+          <img src="assets/images/about_speaker.jpg" alt="Mentorship presentation and active collaboration" class="narrative-img">
+        </div>
+      </div>
+
+      <!-- Chapter 3: The Launch -->
+      <div class="narrative-chapter reveal">
+        <div class="narrative-text">
+          <span class="chapter-number">Chapter 03</span>
+          <h2 class="chapter-title">The Launch</h2>
+          <span class="chapter-year">May 31, 2025</span>
+          <p class="chapter-desc">
+            On May 31, 2025, Triple B hosted its inaugural event. More than 200 students participated in a day filled with inspiration, learning, community, and meaningful conversations.
+          </p>
+          <p class="chapter-desc">
+            Women from diverse industries shared their stories and experiences, helping students see new possibilities for their futures. The event proved that Triple B was more than an idea—it was a movement capable of creating real impact.
+          </p>
+        </div>
+        <div class="narrative-visual crop-editorial-3">
+          <img src="assets/images/initiative_abu.jpg" alt="Large claping student audience at Afe Babalola University launch" class="narrative-img">
+        </div>
+      </div>
+
+      <!-- Chapter 4: Today -->
+      <div class="narrative-chapter narrative-reverse reveal">
+        <div class="narrative-text">
+          <span class="chapter-number">Chapter 04</span>
+          <h2 class="chapter-title">Today</h2>
+          <span class="chapter-year">Active Movement</span>
+          <p class="chapter-desc">
+            Today, Triple B is a registered NGO committed to empowering female students across tertiary institutions in Nigeria. 
+          </p>
+          <p class="chapter-desc">
+            Through mentorship, leadership development, skills acquisition, partnerships, and community building, Triple B continues to create opportunities for young women to grow and thrive in their academic and personal lives.
+          </p>
+        </div>
+        <div class="narrative-visual crop-editorial-4">
+          <img src="assets/images/hero_sisterhood.png" alt="Triple B active community and sisterhood event" class="narrative-img">
+        </div>
+      </div>
+
+      <!-- Chapter 5: Tomorrow -->
+      <div class="narrative-chapter reveal">
+        <div class="narrative-text">
+          <span class="chapter-number">Chapter 05</span>
+          <h2 class="chapter-title">Tomorrow</h2>
+          <span class="chapter-year">The Future Vision</span>
+          <p class="chapter-desc">
+            The vision extends far beyond a single institution. Triple B aims to build a national network of empowered young women connected through mentorship, education, leadership development, and opportunities.
+          </p>
+          <p class="chapter-desc">
+            The long-term goal is to become one of the leading empowerment platforms serving female students across Africa and beyond, inspiring generations to step into their potential.
+          </p>
+        </div>
+        <div class="narrative-visual crop-editorial-5">
+          <img src="assets/images/divider_presentation.jpg" alt="Seminar presenter outlining future roadmap" class="narrative-img">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Founder's Message Section -->
+  <section class="founder-message-section" aria-label="Founder's Message">
+    <div class="container">
+      <div class="founder-grid-layout">
+        <div class="founder-visual reveal">
+          <div class="founder-img-frame">
+            <img src="assets/images/story_founder.jpg" alt="Olonisakin Niniolaoluwa - Founder of Triple B" class="founder-portrait">
+          </div>
+        </div>
+        <div class="founder-text-content reveal">
+          <span class="founder-label">Founder's Message</span>
+          <h2 class="founder-heading">Olonisakin Niniolaoluwa</h2>
+          <span class="founder-role">Founder & President, Triple B Global Initiative</span>
+          
+          <blockquote class="founder-quote">
+            <span class="quote-symbol">“</span>
+            You are not just joining a team. You are joining a movement.
+            <span class="quote-symbol">”</span>
+          </blockquote>
+          
+          <p class="founder-letter">
+            When we set out to build Triple B, it was driven by a single realization: female tertiary students have immense potential, but they often navigate their academic and personal paths without structured guidance. We wanted to build a sanctuary—a community where a young woman doesn't have to choose between beauty, brains, or mental balance.
+          </p>
+          <p class="founder-letter">
+            Every seminar, every digital workshop, and every mentorship session we host is designed to build this legacy. I invite you to join us, support us, and grow with us. Together, we are raising the next generation of Nigerian female leaders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission & Vision Connection Section -->
+  <section class="mission-vision-section" aria-label="Mission and Vision">
+    <div class="container">
+      <div class="mv-grid">
+        
+        <!-- Mission Card -->
+        <div class="mv-card reveal">
+          <div class="mv-icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 class="mv-title">Our Mission</h3>
+          <p class="mv-desc">
+            To empower female students with the skills, tools, opportunities, and mindset to own their future by recognizing their beauty, valuing their intelligence, and learning to balance every part of life.
+          </p>
+        </div>
+
+        <!-- Vision Card -->
+        <div class="mv-card reveal">
+          <div class="mv-icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="mv-title">Our Vision</h3>
+          <p class="mv-desc">
+            To build a platform where female students across institutions are inspired to recognize their beauty, value their intelligence, and balance every aspect of life while unlocking their full potential.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Timeline Experience -->
+  <section class="timeline-section" aria-label="Interactive Timeline">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header text-center reveal">
+        <span class="section-tagline">Our Growth Timeline</span>
+        <h2 class="section-title">The Journey of Triple B</h2>
+        <p class="section-desc">
+          Trace the key milestones of our movement, from its initial inception to its future expansion.
+        </p>
+      </div>
+
+      <!-- Timeline Container -->
+      <div class="timeline-container">
+        <!-- Center Spine Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Node 1: The Seed -->
+        <div class="timeline-node-wrapper left reveal" id="node-2022">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2022 / 2023</span>
+            <h4 class="timeline-card-title">The Seed</h4>
+            <p class="timeline-card-desc">Concept introduced by Amanda Egbe, establishing collegiate leadership platform foundations.</p>
+          </div>
+        </div>
+
+        <!-- Node 2: The Expansion -->
+        <div class="timeline-node-wrapper right reveal" id="node-2024">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 / 2025</span>
+            <h4 class="timeline-card-title">The Expansion</h4>
+            <p class="timeline-card-desc">Olonisakin Niniolaoluwa broadens outreach across colleges and disciplines, expanding empowerment boundaries.</p>
+          </div>
+        </div>
+
+        <!-- Node 3: The Launch -->
+        <div class="timeline-node-wrapper left reveal" id="node-2025">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">May 31, 2025</span>
+            <h4 class="timeline-card-title">The Launch</h4>
+            <p class="timeline-card-desc">Inaugural flagship summit hosting 200+ students with professional industry panel presentations.</p>
+          </div>
+        </div>
+
+        <!-- Node 4: Today -->
+        <div class="timeline-node-wrapper right reveal" id="node-today">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Today</span>
+            <h4 class="timeline-card-title">The Movement</h4>
+            <p class="timeline-card-desc">Registered NGO providing mentorship programs, digital skills acquisition, and wellness channels.</p>
+          </div>
+        </div>
+
+        <!-- Node 5: Tomorrow -->
+        <div class="timeline-node-wrapper left reveal" id="node-tomorrow">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Tomorrow</span>
+            <h4 class="timeline-card-title">The Future</h4>
+            <p class="timeline-card-desc">Building a national collegiate network and leading empowerment platform serving young women across Africa.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Closing Section -->
+  <section class="story-closing-section" aria-label="Closing Call to Action">
+    <div class="container text-center reveal">
+      <span class="closing-eyebrow">Illuminating Her Potential</span>
+      <h2 class="closing-title">What started as an idea is becoming a movement</h2>
+      <p class="closing-desc">
+        One that exists to ensure every young woman has the confidence, community, skills, and opportunities needed to thrive.
+      </p>
+      <div class="closing-cta-buttons">
+        <a href="index.html#join" class="btn btn-primary">Join The Movement</a>
+        <a href="index.html#partner" class="btn btn-secondary">Partner With Triple B</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="contact" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Column 1: Brand & Logo -->
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Triple B Home">
+            <img src="assets/logo.png" alt="Triple B Logo" class="footer-logo">
+          </a>
+          <p class="footer-tagline">
+            Empowering tertiary female students across Nigeria through mentorship, digital skills acquisition, and balance.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com/tripleb_initiative" class="social-icon-btn" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://twitter.com/tripleb" class="social-icon-btn" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/tripleb" class="social-icon-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Column 2: Quick Links -->
+        <div class="footer-links">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#pillars">Our Pillars</a></li>
+            <li><a href="index.html#initiatives">Our Initiatives</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3: Contact Info -->
+        <div class="footer-contacts-col">
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contacts">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:info@triplebinitiative.org">info@triplebinitiative.org</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+2348000000000">+234 800 000 0000</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ado-Ekiti, Ekiti State, Nigeria</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Column 4: Newsletter -->
+        <div class="footer-newsletter">
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="newsletter-desc">Stay updated on our outreach initiatives, webinars, and leadership workshops.</p>
+          <form class="newsletter-form" id="footer-newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn-newsletter" aria-label="Subscribe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+        
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright-text">&copy; 2026 Triple B Global Initiative. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Our Story interactions -->
+  <script src="js/story.js?v=2.0"></script>
+</body>
+</html>

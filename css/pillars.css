@@ -1,0 +1,263 @@
+/* Triple B Pillars Preview Section Styling */
+
+.pillars-section {
+  padding: var(--spacing-xl) 0;
+  background-color: #F4EDFC; /* Sophisticated light brand purple background */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background lighting flares for artistic depth */
+.pillars-section::before,
+.pillars-section::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pillars-section::before {
+  top: 10%;
+  left: -100px;
+  background-color: var(--color-secondary);
+}
+
+.pillars-section::after {
+  bottom: 10%;
+  right: -100px;
+  background-color: var(--color-primary);
+}
+
+.pillars-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-lg) auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pillars-intro .section-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pillars-intro .section-title {
+  font-size: 2.2rem;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.pillars-intro .section-title span {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.pillars-intro .section-description {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .pillars-intro .section-title {
+    font-size: 2.8rem;
+  }
+}
+
+/* Pillars Cards Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+}
+
+@media (min-width: 1200px) {
+  .pillars-grid {
+    gap: var(--spacing-lg);
+  }
+}
+
+/* Pillar Card Base Styles */
+.pillar-card {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem 2.2rem; /* Symmetric padding since link is removed */
+  border: none;
+  box-shadow: var(--shadow-premium);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  height: 100%;
+  color: #FFFFFF; /* All text is white */
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .pillar-card {
+    padding: 3rem 2.5rem;
+  }
+}
+
+/* Disable gradient pseudo overlay */
+.pillar-card::before {
+  display: none;
+}
+
+/* Card Number Tag (Hidden to match inspiration) */
+.pillar-num {
+  display: none;
+}
+
+/* Pillar Icon & Graphic Container (Translucent Rounded Square) */
+.pillar-icon-container {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px; /* Rounded square */
+  background-color: rgba(255, 255, 255, 0.16); /* Translucent white */
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  z-index: 1;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.pillar-icon-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+/* Invert dark PNG icon shapes to white inside their colored cards */
+.pillar-card.pillar-beauty .pillar-icon-img,
+.pillar-card.pillar-brain .pillar-icon-img,
+.pillar-card.pillar-balance .pillar-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Card Content Styling */
+.pillar-name {
+  font-family: var(--font-sans); /* Clean modern sans-serif */
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+  transition: var(--transition-smooth);
+  color: #FFFFFF;
+}
+
+.pillar-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.9); /* High legibility translucent white */
+  font-weight: 400;
+  z-index: 1;
+  transition: var(--transition-smooth);
+}
+
+/* Card Backgrounds matching user guidelines */
+.pillar-card.pillar-beauty {
+  background-color: var(--color-secondary); /* Brand Warm Pink #D63384 */
+  box-shadow: 0 15px 35px rgba(214, 51, 132, 0.2);
+}
+
+.pillar-card.pillar-brain {
+  background-color: var(--color-primary); /* Brand Deep Purple #5E3A8C */
+  box-shadow: 0 15px 35px rgba(94, 58, 140, 0.2);
+}
+
+.pillar-card.pillar-balance {
+  background-color: #A67C1E; /* Rich deep brand gold for excellent contrast & match to inspiration */
+  box-shadow: 0 15px 35px rgba(166, 124, 30, 0.2);
+}
+
+/* Hover transitions matching the premium look */
+.pillar-card:hover {
+  transform: translateY(-8px);
+}
+
+.pillar-card.pillar-beauty:hover {
+  box-shadow: 0 25px 50px rgba(214, 51, 132, 0.35);
+}
+
+.pillar-card.pillar-brain:hover {
+  box-shadow: 0 25px 50px rgba(94, 58, 140, 0.35);
+}
+
+.pillar-card.pillar-balance:hover {
+  box-shadow: 0 25px 50px rgba(166, 124, 30, 0.35);
+}
+
+.pillar-card:hover .pillar-icon-container {
+  background-color: rgba(255, 255, 255, 0.28); /* Slightly brighter on hover */
+  transform: scale(1.05);
+}
+
+/* Card Link/Explore Button */
+.pillar-link {
+  position: absolute;
+  bottom: 2rem;
+  left: 2.2rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+  opacity: 0.8; /* Subtle visibility by default */
+  transform: translateY(0);
+  transition: var(--transition-smooth);
+}
+
+@media (min-width: 1200px) {
+  .pillar-link {
+    left: 2.5rem;
+    bottom: 2.2rem;
+  }
+}
+
+.pillar-link svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  transition: var(--transition-fast);
+}
+
+.pillar-card:hover .pillar-link {
+  opacity: 1;
+}
+
+.pillar-card:hover .pillar-link svg {
+  transform: translateX(4px);
+}
